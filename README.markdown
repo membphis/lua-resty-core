@@ -1,7 +1,7 @@
 Name
 ====
 
-lua-resty-core - New FFI-based Lua API for the ngx_lua module
+lua-resty-core -  New FFI-based Lua API for the ngx_lua module
 
 Table of Contents
 =================
