@@ -830,6 +830,6 @@ GET /t
 --- response_body_like: 502 Bad Gateway
 --- error_code: 502
 --- error_log
-[lua] log_by_lua(nginx.conf:59):2: ngx.var.upstream_addr is 127.0.0.3:12345, 127.0.0.3:12346
+[lua] log_by_lua(nginx.conf:60):2: ngx.var.upstream_addr is 127.0.0.3:12345, 127.0.0.3:12346
 --- no_error_log
 [alert]
