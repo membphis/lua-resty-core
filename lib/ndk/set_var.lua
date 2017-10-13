@@ -9,8 +9,6 @@ local C = ffi.C
 local c_buf_type = ffi.typeof("char[?]")
 local ffi_new = ffi.new
 
-local _M = { version = base.version }
-
 
 ffi.cdef[[
 unsigned int ngx_http_lua_ffi_set_misc_escape_pgsql_str(unsigned char *dst,
@@ -64,7 +62,7 @@ end
 end -- do
 
 
-function _M.quote_pgsql_str(str)
+function ndk.set_var.set_quote_pgsql_str(str)
     if not str or str == '' then
         return "''"
     end
@@ -87,4 +85,6 @@ function _M.quote_pgsql_str(str)
 end
 
 
-return _M
+return {
+    version = base.version
+}
