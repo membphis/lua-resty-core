@@ -86,8 +86,5 @@ function _M.quote_pgsql_str(str)
     return ffi_string(sql_buf_utf, sql_utf_len)
 end
 
-local str = "\x83\x04\x03\x43\x02\x72\x30\x33";
-print(_M.quote_pgsql_str(str))
-print(ndk.set_var.set_quote_pgsql_str(str))
 
 return _M
